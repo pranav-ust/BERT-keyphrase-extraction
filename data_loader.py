@@ -47,7 +47,7 @@ class DataLoader(object):
         with open(sentences_file, 'r') as file:
             for line in file:
                 # replace each token by its index
-                tokens = self.tokenizer.tokenize(line.strip())
+                tokens = line.split()
                 sentences.append(self.tokenizer.convert_tokens_to_ids(tokens))
         
         with open(tags_file, 'r') as file:
@@ -59,6 +59,7 @@ class DataLoader(object):
         # checks to ensure there is a tag for each token
         assert len(sentences) == len(tags)
         for i in range(len(sentences)):
+#             print(sentences[i], tags[i])
             assert len(tags[i]) == len(sentences[i])
 
         # storing sentences and tags in dict d
