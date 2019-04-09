@@ -36,8 +36,8 @@ We used BIO format here. Overall F1 score was 50.0 on test set.
 
 ### Future Work
 
-1. Some tokens have more than 1 annotations. We did not consider multi-label classification.
-2. We only considered linear layer on top of BERT embeddings. We need to see whether SciBERT + BiLSTM + CRF makes a difference.
+1. Some tokens have more than one annotations. We did not consider multi-label classification.
+2. We only considered a linear layer on top of BERT embeddings. We need to see whether SciBERT + BiLSTM + CRF makes a difference.
 
 ## Credits
 
