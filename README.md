@@ -1,4 +1,4 @@
-# BERT-keyphrase-extraction
+# Keyphrase Extraction using SciBERT (Semeval 2017, Task 10)
 
 Deep Keyphrase extraction using SciBERT.
 
