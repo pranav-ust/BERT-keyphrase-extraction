@@ -25,7 +25,7 @@ On test set, we got:
 
 ### Subtask 2: Keyphrase Classification
 
-We used BIO format here. Overall F1 score was 50.0 on test set.
+We used BIO format here. Overall F1 score was 0.4981 on test set.
 
 |          | Precision | Recall | F1-score | Support |
 |----------|-----------|--------|----------|---------|
