@@ -19,8 +19,8 @@ import utils
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--data_dir', default='data/msra', help="Directory containing the dataset")
-parser.add_argument('--bert_model_dir', default='bert-base-chinese-pytorch', help="Directory containing the BERT model in PyTorch")
+parser.add_argument('--data_dir', default='data/task1', help="Directory containing the dataset")
+parser.add_argument('--bert_model_dir', default='bert-base-uncased-pytorch', help="Directory containing the BERT model in PyTorch")
 parser.add_argument('--model_dir', default='experiments/base_model', help="Directory containing params.json")
 parser.add_argument('--seed', type=int, default=2019, help="random seed for initialization")
 parser.add_argument('--restore_file', default=None,
@@ -200,7 +200,7 @@ if __name__ == '__main__':
             from apex.optimizers import FP16_Optimizer
             from apex.optimizers import FusedAdam
         except ImportError:
-            raise ImportError("lease install apex from https://www.github.com/nvidia/apex to use fp16 training.")
+            raise ImportError("Please install apex from https://www.github.com/nvidia/apex to use fp16 training.")
         optimizer = FusedAdam(optimizer_grouped_parameters,
                               lr=params.learning_rate,
                               bias_correction=False,
