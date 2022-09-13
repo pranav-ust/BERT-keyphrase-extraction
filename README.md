@@ -1,3 +1,6 @@
+I don't maintain this repo anymore. There are now way better repos for you to find out keywords like [this one](https://github.com/MaartenGr/KeyBERT)
+---
+
 # Keyphrase Extraction using SciBERT (Semeval 2017, Task 10)
 
 Deep Keyphrase extraction using SciBERT.
